@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume/CV Design</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".full_info_wrap .tab ul li").click(function() {
+                $(".full_info_wrap .tabs ul li").removeClass("active");
+                $(this).addClass("active");
+
+                var datali = $(this).attr("data-li");
+
+                $(".full_info_item").hide();
+
+                if (datali == "experience") {
+                    $(".experience").show();
+                } else if (datali == "education") {
+                    $(".education").show();
+                } else if (datali == "contact") {
+                    $(".contact").show();
+                } else {
+                    console.log("Loding...");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="resume">
+            <!-- div 1 -->
+            <div class="profile_info">
+                <div class="profile_img">
+                    <img src="saymon.png" alt="saymon image">
+                </div>
+
+                <div class="profile_data">
+                    <p class="name">MD.SHAFIQUL HASAN SAYMON</p>
+                    <span><i class="fas fa-map-marker-alt"></i> Chittagong, Bangladesh</span>
+                </div>
+                <div class="view_more_btn">
+                    <a href="project.html">View More</a>
+                </div>
+            </div>
+
+
+            <!-- div 2 -->
+            <div class="skills">
+                <div class="title">Skills</div>
+                <ul>
+                    <li>
+                        <div class="skill_item html">
+                            <div class="icon"></div>
+                            <div class="text">HTML</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item css">
+                            <div class="icon"></div>
+                            <div class="text">CSS</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item js">
+                            <div class="icon"></div>
+                            <div class="text">Javascript</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item python">
+                            <div class="icon"></div>
+                            <div class="text">Python</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item django">
+                            <div class="icon"></div>
+                            <div class="text">Django</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item java">
+                            <div class="icon"></div>
+                            <div class="text">JAVA</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- div 3 -->
+            <div class="full_info_wrap">
+                <div class="tab">
+                    <ul>
+                        <li data-li="experience" class="active">Experience</li>
+                        <li data-li="education">Education</li>
+                        <li data-li="contact">Contact</li>
+                    </ul>
+                </div>
+                <div class="full_info">
+                    <div class="full_info_item experience">
+                        <div class="title">WORK EXPERIENCE</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <div class="sub_title">2021-2022</div>
+                                    <div class="info_item">React Native</div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">2022-2023</div>
+                                    <div class="info_item">Django</div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">2022-2023</div>
+                                    <div class="info_item">JAVA & Database Project</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="full_info_item education" style="display: none;">
+                        <div class="title">EDUCATION</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <div class="sub_title">
+                                        2010 - 2013
+                                    </div>
+
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            Web Designing (Texas University)
+                                        </div>
+                                        <div class="data">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">
+                                        2000 - 2010
+                                    </div>
+
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            Texas International School
+                                        </div>
+                                        <div class="data">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="full_info_item contact" style="display: none;">
+                        <div class="title">CONTACT</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <span class="info_q">Email</span>
+                                    <span class="info_a">mdshafiqulsaymon@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span class="info_q">GitHub</span>
+                                    <a class="info_q" href="https://github.com/MdShafiqulSaymon">github.com/MdShafiqulSaymon</a>
+                                </li>
+                                <li>
+                                    <span class="info_q">Phone</span>
+                                    <span class="info_a">+8801888326497</span>
+                                </li>
+                                <li>
+                                    <span class="info_q">Linkedin</span>
+                                    <a class="info_q" href="https://www.linkedin.com/in/md-shafiqul-saymon-22a7201a1/">linkdin/saymon</a>
+                                </li>
+                                <li>
+                                    <span class="info_q">Facebook</span>
+                                    <a class="info_q" href="https://www.facebook.com/profile.php?id=100016532340309">facebook.com/saymon</a>
+                                </li>
+                                <li>
+                                    <span class="info_q">Twitter</span>
+                                    <span class="info_a">twitter.com/Srosey</span>
+                                </li>
+                                <li>
+                                    <span class="info_q">Instagram</span>
+                                    <a class="info_q" href="https://www.instagram.com/__saymon_._/">instagram.com/__saymon_._/</a>
+                                </li>
+                                <li>
+                                    <span class="info_q">Reddit</span>
+                                    <span class="info_a">reddit.com/Srosey</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
